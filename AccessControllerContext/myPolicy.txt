@@ -1,0 +1,15 @@
+keystore "ijvmkeys.keystore";
+
+grant signedby "friend.keystore" {
+	permission java.io.FilePermission "/Users/dinghui/Project/answer.txt", "read";
+	permission java.io.FilePermission "/Users/dinghui/Project/question.txt", "read";
+};
+
+grant signedby "stranger.keystore" {
+	permission java.io.FilePermission "/Users/dinghui/Project/question.txt", "read";
+};
+
+grant codeBase "file:/Users/dinghui/Project/TestJavaSyntax/AccessControllerContext/*" {
+	permission java.io.FilePermission "/Users/dinghui/Project/answer.txt", "read";
+	permission java.io.FilePermission "/Users/dinghui/Project/question.txt", "read";
+};

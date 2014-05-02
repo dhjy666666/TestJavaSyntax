@@ -1,0 +1,4 @@
+grant codeBase "file:/Users/dinghui/Project/TestJavaSyntax/policy/*" {
+	permission java.io.FilePermission "/Users/dinghui/Project/TestJavaSyntax/policy/testPolicy.txt", "read,write";
+};
+
